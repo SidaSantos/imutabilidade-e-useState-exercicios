@@ -20,6 +20,8 @@ Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste r
 Primeiro, vamos analisar todo o código que vocês estão recebendo. 
 
 - Observe o `App.js`, o que você consegue visualizar que já conhece? 
+Resposta: 
+
 - Entende o `<GlobalStyles/>`?
 - Analize o useState criado, que tipo de dado está armazenado neste estado?
 

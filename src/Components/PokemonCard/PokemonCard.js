@@ -1,24 +1,30 @@
-import React from 'react'
-import {Card, PokemonName, PokemonType, EvolveButton} from './styles'
-
-
+import React from "react";
+import {
+  Card,
+  PokemonImg,
+  PokemonName,
+  PokemonType,
+  EvolveButton,
+} from "./styles";
 
 const PokemonCard = (props) => {
+  console.log(props)
+  const { color, image, name, type, weight } = props;
 
-    const evoluirPokemon = () => {
-        console.log("Cliquei no botão de evoluir")
-    }
-    
+  const evoluirPokemon = () => {
+    console.log("Cliquei no botão de evoluir");
+  };
+
   return (
-    <Card color={}>
-        <img src={} alt={`Pokemon`}/>
-        <PokemonName>{}</PokemonName>
-        <PokemonType>{}</PokemonType>
-        <p>{}kg</p>
+    <Card color={color}>
+      <PokemonImg src={image} alt={`Pokemon`} />
+      <PokemonName>{name}</PokemonName>
+      <PokemonType>{type}</PokemonType>
+      <p>{weight}kg</p>
 
-        <EvolveButton onClick={() => evoluirPokemon()}>Evoluir!</EvolveButton>
+      <EvolveButton onClick={() => evoluirPokemon()}>Evoluir!</EvolveButton>
     </Card>
-  )
-}
+  );
+};
 
-export default PokemonCard
+export default PokemonCard;
